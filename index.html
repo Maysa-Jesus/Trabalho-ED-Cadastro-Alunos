@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Cadastro de Alunos</title>
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h3 id="titulo">Cadastro de Alunos</h3>
+
+    <!-- Container principal que agrupa formulário, botões e informações -->
+    <div class="container">
+
+        <!-- Formulário de cadastro de alunos -->
+        <div class="formulario" id="formulario">
+            <div>
+                <label for="nome"><strong>Informe o nome:</strong></label>
+                <input type="text" class="input" id="nome">
+            </div>
+            <div>
+                <label for="ra"><strong>Informe o RA:</strong></label>
+                <input type="number" class="input" id="ra">
+            </div>
+            <div>
+                <label for="idade"><strong>Informe a idade:</strong></label>
+                <input type="number" class="input" id="idade">
+            </div>
+            <div>
+                <label for="sexo"><strong>Selecione o sexo:</strong></label>
+                <select id="sexo" class="input">
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div>
+                <label for="media"><strong>Informe a média:</strong></label>
+                <input type="number" class="input" id="media">
+            </div>
+            <div>
+                <label for="resultado"><strong>Selecione o resultado:</strong></label>
+                <select class="input" id="resultado">
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="aprovado">Aprovado</option>
+                    <option value="reprovado">Reprovado</option>
+                </select>
+            </div>
+
+            <!-- Div para mostrar mensagens de erro -->
+            <div id="mensagemFormulario"></div>
+        </div>
+
+        <!-- Botões de ação -->
+        <div class="botoes">
+            <button onclick="cadastrar()" class="btn" id="cadastrarBtn">Cadastrar</button>
+            <button onclick="ordenacaoNome()" class="btn">Relatório por Nome</button>
+            <button onclick="ordenacaoRA()" class="btn">Relatório por RA</button>
+            <button onclick="ordenacaoAprovadosNome()" class="btn">Relatório de Aprovados por Nome</button>
+            <button onclick="fecharInfos()" class="btn" id="fechar-btn">Fechar Informações</button>
+        </div>
+
+        <!-- Área de informações de alunos cadastrados -->
+        <div class="infos" id="infos">
+            <p id="saidaInfos"><strong>Infos:</strong></p>
+        </div>
+        
+    </div>
+
+</body>
+</html>
