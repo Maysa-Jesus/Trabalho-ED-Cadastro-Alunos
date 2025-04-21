@@ -1,6 +1,6 @@
 # Sistema de Cadastro e Relatórios de Alunos
 
-O presente projeto é uma aplicação web simples em JavaScript que permite cadastrar alunos, validar dados de entrada, exibir relatórios e ordenar informações dos alunos cadastrados.
+O presente projeto é uma aplicação web em JavaScript que permite cadastrar alunos, validar dados de entrada, exibir relatórios e ordenar informações dos alunos cadastrados.
 
 ## 📋 Funcionalidades
 
