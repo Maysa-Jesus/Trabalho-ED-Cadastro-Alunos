@@ -30,7 +30,7 @@ function cadastrar() {
     ra = Number(inputRA.value.trim());
     idade = Number(inputIdade.value.trim());
     sexo = inputSexo.value.trim();
-    media = inputMedia.value.trim();
+    media = parseFloat(inputMedia.value.trim());
     resultado = inputResultado.value.trim();
 
     // Limpa mensagens de erro e a marcação nas bordas
@@ -54,7 +54,7 @@ function cadastrar() {
         mostrarMensagemFormulario("Selecione o Sexo!", inputSexo, 'erro');
         return;
     }
-    if (media === '' || Number(media) < 0 || Number(media) > 10) {
+    if (isNaN(media) || media < 0 || media > 10) {
         mostrarMensagemFormulario("Preencha a Média corretamente! (entre 0 e 10)", inputMedia, 'erro');
         return;
     }
@@ -69,7 +69,7 @@ function cadastrar() {
         ra: ra,
         idade: idade,
         sexo: sexo,
-        media: Number(media),
+        media: media,
         resultado: resultado
     };
 

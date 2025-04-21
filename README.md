@@ -69,4 +69,4 @@ Todo o funcionamento é feito no front-end, sem necessidade de back-end ou servi
 - Implementar filtros mais avançados (ex: alunos reprovados, faixas de média, etc).
 - Exportar o relatório para arquivo (PDF, CSV).
 - Melhorar a responsividade do layout para dispositivos móveis.
-- Persistir os dados localmente usando localStorage.
+- Persistir os dados localmente usando localStorage. 
